@@ -12,12 +12,15 @@ namespace UI.Pages.Admin.TestRecords.Inputs
             OnStart(x =>
             {
                 x.CSharp("var item = await Request.Get<Input>(\"item\");");
+
                 
-                /*M#:w[15]T-Prop:SendReturnUrl-Type:NavigateActivity-The destination page uses ReturnUrl which is not provided.*/x.Go<DynamicEnterPage>().Pass("item").If($"item is {nameof(Domain.DynamicInput)}");
+                /*M#:w[16]T-Prop:SendReturnUrl-Type:NavigateActivity-The destination page uses ReturnUrl which is not provided.*/x.Go<DynamicEnterPage>().Pass("item").If($"item is {nameof(Domain.DynamicInput)}");
+
                 
-                /*M#:w[17]T-Prop:SendReturnUrl-Type:NavigateActivity-The destination page uses ReturnUrl which is not provided.*/x.Go<MultiOptionEnterPage>().Pass("item").If(CommonCriterion.ElseIf, $"item is {nameof(Domain.MultipleOptionInput)}");
+                /*M#:w[19]T-Prop:SendReturnUrl-Type:NavigateActivity-The destination page uses ReturnUrl which is not provided.*/x.Go<MultiOptionEnterPage>().Pass("item").If(CommonCriterion.ElseIf, $"item is {nameof(Domain.MultipleOptionsInput)}");
+
                 
-                /*M#:w[19]T-Prop:SendReturnUrl-Type:NavigateActivity-The destination page uses ReturnUrl which is not provided.*/x.Go<GenericEnterPage>().Pass("item").If(CommonCriterion.Else);
+                /*M#:w[22]T-Prop:SendReturnUrl-Type:NavigateActivity-The destination page uses ReturnUrl which is not provided.*/x.Go<GenericEnterPage>().Pass("item").If(CommonCriterion.Else);
             });
         }
     }

@@ -6,7 +6,7 @@ namespace Domain
     {
         public InputOption()
         {            
-            Associate<MultipleOptionInput>("Input").Mandatory().DatabaseIndex();
+            Associate<MultipleOptionsInput>("Input").Mandatory().DatabaseIndex();
             String("Value");
         }
     }

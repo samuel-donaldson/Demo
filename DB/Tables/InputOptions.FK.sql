@@ -1,6 +1,6 @@
 ﻿ALTER TABLE InputOptions ADD Constraint
-                [FK_InputOption.Input->MultipleOptionInput]
+                [FK_InputOption.Input->MultipleOptionsInput]
                 FOREIGN KEY ([Input])
-                REFERENCES MultipleOptionInputs (ID)
+                REFERENCES MultipleOptionsInputs (ID)
                 ON DELETE NO ACTION;
 GO

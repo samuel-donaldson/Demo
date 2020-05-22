@@ -9,7 +9,7 @@ namespace UI.Pages.Admin.TestRecords.Inputs
     {
         public MultiOptionEnterPage()
         {
-            Add<Modules.Input.MultiOptionInputForm>();
+            Add<Modules.Input.MultiOptionsInputForm>();
         }
     }
 }

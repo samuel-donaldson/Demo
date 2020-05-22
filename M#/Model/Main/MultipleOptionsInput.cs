@@ -2,9 +2,9 @@
 
 namespace Domain
 {
-    class MultipleOptionInput : SubType<Input>
+    class MultipleOptionsInput : SubType<Input>
     {
-        public MultipleOptionInput()
+        public MultipleOptionsInput()
         {
             InverseAssociate<InputOption>("Options", "Input");
         }

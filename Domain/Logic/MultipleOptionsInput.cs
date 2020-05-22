@@ -10,7 +10,7 @@
     using Olive.Entities;
     using Olive.Entities.Data;
 
-    public partial class MultipleOptionInput
+    public partial class MultipleOptionsInput
     {
         public override string GetTypeName() => "Multiple options";
     }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UI.Modules.Input
 {
-    class MultiOptionInputForm : InputBaseForm<Domain.MultipleOptionInput>
+    class MultiOptionsInputForm : InputBaseForm<Domain.MultipleOptionsInput>
     {
         protected override void AddFields()
         {

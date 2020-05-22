@@ -17,8 +17,8 @@ namespace Modules
             LinkColumn("Sort").NoText().Icon(FA.Sort).OnClick(x => x.DragSort());
             CustomColumn("Type").DisplayExpression("@item.GetTypeName()");
             Column(x => x.Title);
-            CustomColumn("Options").CellVisibleIf("item is MultipleOptionInput").DisplayExpression("@(await (item as MultipleOptionInput).Options.Count())");
-            CustomColumn("Fields").CellVisibleIf("item is DynamicInput").DisplayExpression("@(await (item as DynamicInput).Fields.Count())");
+            CustomColumn("Options").HeaderTemplate("Options").CellVisibleIf("item is MultipleOptionsInput").DisplayExpression("@(await (item as MultipleOptionsInput).Options.Count())");
+            CustomColumn("Fields").LabelText("Fields").CellVisibleIf("item is DynamicInput").DisplayExpression("@(await (item as DynamicInput).Fields.Count())");
             Column(x => x.Description);
             Column(x => x.Mandatory);
 
