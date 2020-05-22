@@ -1,0 +1,7 @@
+﻿ALTER TABLE DynamicInputs ADD CONSTRAINT 
+[FK_DynamicInput.Id->Input] FOREIGN KEY (Id) 
+REFERENCES Inputs (ID)
+ ON DELETE CASCADE;
+
+
+GO
