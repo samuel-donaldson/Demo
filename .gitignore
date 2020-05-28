@@ -168,3 +168,12 @@ M#/lib/*
 M#/lib/netcoreapp*/*
 !M#/lib/netcoreapp*/MSharp.DSL.runtimeconfig.json
 M#/UI/SchemaExtensions.cs
+
+# Pangolin files
+Demo Tests/Demo Tests/PangolinTestResults
+Demo Tests/Demo Tests/bin
+Demo Tests/Demo Tests/obj
+Demo Tests/packages
+Demo Tests/GCopReport.json
+Demo Tests/GCop/GCop.json
+Demo Tests/Demo Tests/Screenshots
